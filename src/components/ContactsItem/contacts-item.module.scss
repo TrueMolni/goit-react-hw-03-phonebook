@@ -24,8 +24,7 @@
 .item {
   font-size: 18px;
   font-weight: 500px;
-
-  &:not(:last-child) {
-    margin-top: 10px;
-  }
+}
+.item:not(:last-child) {
+  margin-top: 10px;
 }
