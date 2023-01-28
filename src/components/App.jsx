@@ -6,16 +6,7 @@ import Filter from './Filter/Filter';
 
 class App extends Component {
   state = {
-    contacts: [
-      { id: nanoid(), name: 'Amerigo W', number: '0995232' },
-      { id: nanoid(), name: 'Bill C', number: '0995232' },
-      { id: nanoid(), name: 'Smidth H', number: '0995232' },
-      { id: nanoid(), name: 'Sparrow J', number: '0995232' },
-      { id: nanoid(), name: 'Rosie Simpson', number: '459-12-56' },
-      { id: nanoid(), name: 'Hermione Kline', number: '443-89-12' },
-      { id: nanoid(), name: 'Eden Clements', number: '645-17-79' },
-      { id: nanoid(), name: 'Annie Copeland', number: '227-91-26' },
-    ],
+    contacts: [],
     filter: '',
   };
 
