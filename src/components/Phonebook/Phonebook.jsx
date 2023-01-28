@@ -2,17 +2,19 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import scss from './phonebook.module.scss';
 
+const inititalState = { name: '', number: '' };
+
 class Phonebook extends Component {
-  state = { name: '', number: '' };
+  state = { ...inititalState };
+
+  reset() {
+    this.setState({ ...inititalState });
+  }
 
   handleChange = ({ target }) => {
     const { name, value } = target;
     this.setState({ [name]: value });
   };
-
-  reset() {
-    this.setState = { name: '', number: '' };
-  }
 
   handleSubmit = e => {
     e.preventDefault();

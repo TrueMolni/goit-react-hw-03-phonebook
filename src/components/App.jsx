@@ -12,19 +12,19 @@ class App extends Component {
 
   componentDidMount() {
     const contacts = JSON.parse(localStorage.getItem('my-contacts'));
-    console.log('Before establishing contacts');
+    // console.log('Before establishing contacts');
     if (contacts && contacts.length) {
       this.setState({ contacts });
-      console.log('have setted contacts');
+      // console.log('have setted contacts');
     }
   }
   componentDidUpdate(prevProps, prevState) {
-    console.log('componentDidUpdate');
-    console.log('prevState', prevState);
-    console.log('currentState', this.state);
+    // console.log('componentDidUpdate');
+    // console.log('prevState', prevState);
+    // console.log('currentState', this.state);
     const { contacts } = this.state;
     if (prevState.contacts.length !== contacts.length) {
-      console.log('Update contacts');
+      // console.log('Update contacts');
       localStorage.setItem('my-contacts', JSON.stringify(contacts));
     }
   }
