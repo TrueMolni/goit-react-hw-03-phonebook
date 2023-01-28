@@ -1,0 +1,31 @@
+.button {
+  margin-left: 30px;
+  padding: 5px;
+  min-width: 100px;
+  font-size: 16px;
+  font-weight: 400;
+
+  letter-spacing: 0.06em;
+  text-align: center;
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  background-color: #2196f3;
+
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: blue;
+}
+
+.item {
+  font-size: 18px;
+  font-weight: 500px;
+
+  &:not(:last-child) {
+    margin-top: 10px;
+  }
+}
